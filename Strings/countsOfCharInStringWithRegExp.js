@@ -1,3 +1,4 @@
+//using regexp
 function countsOfCharInStringWithRegExp(str) {
   let obj = {};
   for (let char of str) {
