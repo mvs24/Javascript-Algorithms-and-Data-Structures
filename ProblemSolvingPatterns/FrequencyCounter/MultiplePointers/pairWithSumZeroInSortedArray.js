@@ -1,5 +1,4 @@
 function pairWithSumZeroInSortedArray(array) {
-  let result = [];
   let i = 0;
   let j = array.length - 1;
   while(j > i){
