@@ -9,6 +9,5 @@ function countUniqueValuesInSortedArray2(array) {
     }
     return i + 1;
   }
-  let array = [-1, 0, 1, 1, 1, 1, 2, 2, 3, 6, 7, 9, 9];
-  console.log(countUniqueValuesInSortedArray(array));
+  console.log(countUniqueValuesInSortedArray([-1, 0, 1, 1, 1, 1, 2, 2, 3, 6, 7, 9, 9]));
   
