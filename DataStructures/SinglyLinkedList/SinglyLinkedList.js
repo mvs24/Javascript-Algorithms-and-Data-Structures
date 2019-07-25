@@ -37,6 +37,44 @@ class SinglyLinkedList {
     this.length--;
     return x;
   }
+  
+  
+  shift() {
+    if (!this.head) {
+      return undefined;
+    }
+    let x = this.head.val;
+    this.head = this.head.next;
+    this.length--;
+    if (this.length === 0) {
+      this.tail = null;
+    }
+    return x;
+  }
+
+  unshift(val) {
+    let p = new Node(val);
+    if (!this.head) {
+      this.head = this.tail = p;
+    }
+    p.next = this.head;
+    this.head = p;
+    this.length++;
+    return this;
+  }
+
+  getNode(index) {
+    let p = this.head;
+    if (index < 0 || index >= this.length) {
+      return null;
+    }
+
+    for (let i = 0; i < index; i++) {
+      p = p.next;
+    }
+    return p;
+  }
+
 
   traverse() {
     let p = this.head;
