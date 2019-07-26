@@ -37,8 +37,7 @@ class SinglyLinkedList {
     this.length--;
     return x;
   }
-  
-  
+
   shift() {
     if (!this.head) {
       return undefined;
@@ -75,6 +74,70 @@ class SinglyLinkedList {
     return p;
   }
 
+  set(index, value) {
+    if (this.getNode(index) === null) {
+      return false;
+    }
+    this.getNode(index).val = value;
+    return true;
+  }
+
+  insert(index, value) {
+    if (index < 0 || index > this.length) {
+      return false;
+    }
+    if (index === this.length) {
+      return this.push(value);
+    }
+    if (index === 0) {
+      return this.unshift(value);
+    }
+    let newNode = new Node(value);
+    let p = this.head;
+    for (let i = 0; i < index - 1; i++) {
+      p = p.next;
+    }
+    newNode.next = p.next;
+    p.next = newNode;
+    this.length++;
+    return true;
+  }
+
+  remove(index) {
+    if (index < 0 || index > this.length) {
+      return undefined;
+    }
+    if (index === this.length - 1) {
+      return this.pop();
+    }
+    if (index === 0) {
+      this.shift();
+    }
+    let p = this.head;
+    for (let i = 0; i < index - 1; i++) {
+      p = p.next;
+    }
+    let x = p.next.val;
+    p.next = p.next.next;
+    this.length--;
+    return x;
+  }
+
+  reverse() {
+    let first = this.head;
+    let last = this.tail;
+    let p = this.head;
+    let q = null;
+    let r = q;
+    while (p) {
+      r = q;
+      q = p;
+      p = p.next;
+      q.next = r;
+    }
+    this.head = last;
+    this.tail = first;
+  }
 
   traverse() {
     let p = this.head;
@@ -91,4 +154,19 @@ list.push(22);
 list.push(34);
 list.push(4);
 list.pop();
+list.shift();
+list.unshift(12);
+// list.traverse();
+// console.log(list.getNode(1));
+list.set(1, "Hello");
+// list.traverse();
+// console.log(list.set(5, 2));
+list.insert(1, "hi");
+// list.traverse();
+// console.log(list);
+list.remove(2);
+// list.traverse();
+// list.reverse();
 list.traverse();
+console.log(list);
+
