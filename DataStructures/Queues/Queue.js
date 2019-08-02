@@ -36,3 +36,10 @@ class Queue {
     return temp.value;
   }
 }
+let queue = new Queue();
+queue.enqueue(3);
+queue.enqueue(4);
+queue.dequeue();
+console.log(queue);
+
+
