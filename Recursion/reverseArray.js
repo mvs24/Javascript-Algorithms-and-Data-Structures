@@ -4,7 +4,7 @@ function reverse(array) {
       if (array.length === 0) return result;
       let removedEl = array.pop();
       result.push(removedEl);
-      // console.log(result);
+      
       reverseArray(array);
     }
     reverseArray(array);
