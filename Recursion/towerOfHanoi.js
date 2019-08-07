@@ -7,7 +7,7 @@
 //                :second: ====>>> : :      :first:     : :
 //                :third:          : :      :second:    :third:
 //                   A             A          B          C
-// move first to A, second to C, finally first from A to C 
+//Afterwards move first to A, second to C, finally first from A to C 
 // This is realized like in case b) toh(2, b, a, c);
 
 function toh(n, a, b, c) {
