@@ -11,26 +11,6 @@ class BinarySearchTree {
     this.root = null;
   }
 
-  // insert(val) {
-  //   let current = this.root;
-  //   function inserInBinarySearchTree(treeRoot) {
-  //     let newNode = new Node(val);
-  //     if (treeRoot === null) {
-  //       treeRoot = newNode;
-  //     }
-  //     // else {
-  //     //   if (newNode.value > treeRoot.value) {
-  //     //     treeRoot.right = inserInBinarySearchTree(treeRoot.right);
-  //     //   } else if (newNode.value < treeRoot.value) {
-  //     //     treeRoot.left = inserInBinarySearchTree(treeRoot.left);
-  //     //   }
-  //     // }
-
-  //     return newNode;
-  //   }
-  //   inserInBinarySearchTree(current);
-  // }
-
   insert(value) {
     let newNode = new Node(value);
     if (this.root === null) {
