@@ -139,5 +139,5 @@ list.push("hello");
 list.insert(2, 8);
 list.push(12);
 // console.log(list.get(3));
-list.remove(2);
+// list.remove(2);
 list.traverse();
