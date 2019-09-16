@@ -24,5 +24,4 @@ function anagram(str1, str2) {
     return true;
   }
   
-
   anagram('anagram', 'nagaram')
