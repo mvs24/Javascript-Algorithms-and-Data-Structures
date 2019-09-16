@@ -165,7 +165,7 @@ list.insert(1, "hi");
 // list.traverse();
 // console.log(list);
 list.remove(2);
-// list.traverse();
+
 // list.reverse();
 list.traverse();
 console.log(list);
