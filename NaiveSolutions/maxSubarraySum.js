@@ -15,6 +15,5 @@ function maxSubarraySum(array, n) {
     }
     return max;
   }
-  
   console.log(maxSubarraySum([4, 2, 1, 6, 2], 4));
   
