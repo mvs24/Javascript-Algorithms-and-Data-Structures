@@ -6,7 +6,6 @@ function anagram(str1, str2) {
     let frequencyCounter1 = {};
     let frequencyCounter2 = {};
   
-  
    for (let i = 0; i < str1.length; i++) {
      if(frequencyCounter1[str1[i]] > 0){
       frequencyCounter1[str1[i]]++
