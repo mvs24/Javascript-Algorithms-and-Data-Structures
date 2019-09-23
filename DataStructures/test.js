@@ -3,3 +3,4 @@
 // Trees
 // Queues
 // Stacks
+// Priority Queues
