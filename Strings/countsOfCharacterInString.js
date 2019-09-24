@@ -11,6 +11,4 @@ function countsOfCharInString(str) {
   return obj;
 }
 
-
-
 console.log(countsOfCharInString("abba  Aacd!"));
