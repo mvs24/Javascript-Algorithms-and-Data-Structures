@@ -1,5 +1,5 @@
 // ****************Data Structures*********************************
-// LinkedLists
+// Linked Lists
 // Trees
 // Queues
 // Stacks
