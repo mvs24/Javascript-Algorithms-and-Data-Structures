@@ -96,7 +96,7 @@ bst.insert(12);
 bst.insert(34);
 bst.insert(4);
 bst.insert(74);
-bst.insert(7);
+// bst.insert(7);
 bst.insert(15);
 bst.insert(2);
 bst.preOrder();
