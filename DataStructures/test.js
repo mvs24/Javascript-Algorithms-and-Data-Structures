@@ -5,4 +5,4 @@
 // Stacks
 // Priority Queues
 // Graphs
-// 
+// Hash Tables
