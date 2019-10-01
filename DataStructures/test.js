@@ -3,6 +3,6 @@
 // Trees
 // Queues
 // Stacks
-// Priority Queues
+// Priority Queues (Heaps)
 // Graphs
 // Hash Tables
