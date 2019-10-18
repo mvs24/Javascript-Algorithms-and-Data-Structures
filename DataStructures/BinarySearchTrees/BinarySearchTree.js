@@ -16,6 +16,7 @@ class BinarySearchTree {
       this.root = newNode;
       return this;
     }
+    
     let current = this.root;
     while (true) {
       if (value === current.value) return undefined;
